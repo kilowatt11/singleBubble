@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bubApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Single Bubble</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-controller="bubController">
+    
+    <div class="container">
+        <div class="stage">
+
+            <div ng-style="myStyle" class="ball bubble">
+                <span>
+                    <p class="count text-center">{{counter}}</p>
+                    <p class="meet text-center">{{meettext}}</p>
+                    <button id="thought-bubblePop" ng-disabled="buttonDisabled" ng-style="popStyle"
+                   ng-click="pop(bub, $index)" ><i class="fa fa-sun-o"></i></button>
+                    <button id="thought-bubbleDown" ng-disabled="buttonDisabled" ng-style="downStyle" ng-click="bumpDown()"><i class="fa fa-minus"></i></button>
+                    <button id="thought-bubbleUp" ng-disabled="buttonDisabled" ng-style="upStyle" ng-click="bumpUp()"><i class="fa fa-plus"></i></button>
+            </span>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controller.js"></script>
+</body>
+
+</html>
