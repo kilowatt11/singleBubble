@@ -27,6 +27,7 @@ app.controller('bubController', function ($scope) {
                     "top": "170px",
                     "margin-left": "45%"
                 }
+                $scope.meettxt = "Interested?";
                 break;
 
             case 4:
@@ -46,6 +47,7 @@ app.controller('bubController', function ($scope) {
                     "top": "200px",
                     "margin-left": "45%"
                 }
+                $scope.meettxt = "Really Like This!?";
                 break;
             case 5:
                 alert("Lets Meet!!");
@@ -70,23 +72,7 @@ app.controller('bubController', function ($scope) {
                 break;
 
         }
-        //     if ($scope.counter === 1 || 2) {
-        //         return;
-
-        //     } else if ($scope.counter === 3) {
-        //         $scope.myStyle = {
-        //             "width": "65%",
-        //             "height": "65%"
-        //         }
-        //         $scope.counter++
-
-        //     } else if ($scope.counter === 4) {
-        //         $scope.myStyle = {
-        //             "width": "65%",
-        //             "height": "65%"
-        //         }
-        //         $scope.counter++
-        //     }
+       
     };
     $scope.bumpDown = function () {
         if($scope.counter > 0){
